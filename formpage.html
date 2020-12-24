@@ -63,9 +63,9 @@
     <div class="row">
       <div class="col-5">
         <div class="form-group">
-          <form class="form-group">
+          <form class="form-group" id="indexform">
             <input class="form-control main_frame" placeholder="Содержание запроса" type="text" value="">
-            <input class="btn main_frame" type="submit" value="Поиск"></button>
+            <input class="btn main_frame" type="submit" id="indexbutton" value="Поиск"></button>
         </form>
         </div>
       </div>
@@ -86,7 +86,7 @@
     <h3> Покупка книги <a href="#">Такой</a></h3>
   </div>
 
-  <form class="needs-validation" novalidate>
+  <form  id="formpageform"class="needs-validation" novalidate>
     <div class="form-row">
       <div class="col">
         <label>Имя</label>
@@ -110,7 +110,7 @@
         <select class="custom-select" required>
           <option selected disabled value="">Выбрать...</option>
           <option>Москва</option>
-          <option>Питер лол</option>
+          <option>Питер</option>
           <option>Я смешарик</option>
         </select>
 
@@ -130,7 +130,7 @@
     <div class="form-group">
       <input type="checkbox" value="a2"> Согласен.
     </div>
-    <input class="btn" type="submit"></input>
+    <input class="btn" type="submit" id="formbuttonsubmit"></input>
   </form>
 
 	<script src="formpage.js"></script>
