@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    Покупка
+  </title>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(70423603, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/70423603" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="images/favicon.png" rel="icon" type="image/png" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+
+</head>
+
+<body style="background-color: rgb(243, 243, 243)">
+
+  <ul class="nav justify-content-center" type="disk">
+    <li class="nav-item">
+      <a class="nav-link" href="https://vk.com/unmiy">О нас</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Программа лояльности</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Партнёры</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Оплата и бонусы</a>
+    </li>
+  </ul>
+
+  <div class="main_frame">
+    <div class="row">
+      <div class="col-5">
+        <div class="form-group">
+          <form class="form-group" id="indexform">
+            <input class="form-control main_frame" placeholder="Содержание запроса" type="text" value="">
+            <input class="btn main_frame" type="submit" id="indexbutton" value="Поиск"></button>
+        </form>
+        </div>
+      </div>
+      <div class="col-sm">
+        <img src="images/Logo.bmp" onclick="window.location.href='index.html'">
+      </div>
+    </div>
+  </div>
+
+  <div class="btn_holder">
+    <button class="btn">Категории</button>
+    <button class="btn">Писатели</button>
+    <button class="btn">Сувениры</button>
+    <button class="btn">Бестселлеры</button>
+  </div>
+
+  <div class="search_line">
+    <h3> Покупка книги <a href="#">Такой</a></h3>
+  </div>
+
+  <form  id="formpageform"class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col">
+        <label>Имя</label>
+        <input type="text" class="form-control"  name ="name" value="" required>
+
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Фамилия</label>
+        <input type="text" class="form-control"  name ="surname" value="" required>
+
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label>Город</label>
+        <input type="text" class="form-control"  name ="cityname" required>
+
+      </div>
+      <div class="col-md-3 mb-3">
+        <label>Субъект РФ</label>
+        <select class="custom-select" name="statename" required>
+          <option selected disabled value="">Выбрать...</option>
+          <option>Москва</option>
+          <option>Питер</option>
+          <option>Я смешарик</option>
+        </select>
+
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3 mb-3">
+        <label>CVC</label>
+        <input type="tel" class="form-control bfh-phone"  name ="cvcname" data-format="ddd" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Номер счёта</label>
+        <input type="tel" class="form-control bfh-phone"  name ="codename" data-format="dddd dddd dddd dddd" required>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <input type="checkbox" value="a2"> Согласен.
+    </div>
+    <input class="btn" type="submit" id="formbuttonsubmit"></input>
+  </form>
+
+	<script src="formpage.js"></script>
+</body>
+</html>
