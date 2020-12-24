@@ -2,28 +2,26 @@ console.log("Скрипт загружен")
 let formData = document.getElementById('formpageform');
 
 var buttonsubmit = document.getElementById('formbuttonsubmit');
+if(buttonsubmit){
 buttonsubmit.addEventListener( 'click' , buttonPressed);
 
 function buttonPressed(evt) {
 	console.log("Кнопка нажата загружен");
 	evt.preventDefault();
 	
-    let index=0;
-    for(;index<6;index++){
-        if(formData.elements[index].value==""){
+    
+        if(formData.name.value=="" || formData.statename.selectedindex==0 || formData.surname.value=="" 
+        ||formData.cityname.value=="" ||formData.cvcname.value==""||formData.codename.value==""){
             Swal.fire(
                 'Ошибка!',
                 'Вы не заполнили данные',
                 'error'
             )
             console.log("Вы не заполнили данные");
-            index=0;
             return;
         }
-        else{     
-            index++;
-        }
-    }
+        
+    
     if(formData.elements[6].checked==false){
         Swal.fire(
             'Ошибка!',
@@ -39,6 +37,7 @@ function buttonPressed(evt) {
         'success'
     )
         }
+}
 }
 
 let form = document.getElementById('indexform');
